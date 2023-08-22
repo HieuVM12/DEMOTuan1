@@ -1,0 +1,30 @@
+﻿@model NhanVien;
+
+<form method="post" asp-action="DeletePost">
+	<input asp-for="Id" hidden />
+	<div>
+		<h2>
+			Xóa nhân viên
+		</h2>
+	</div>
+	<div class="mb-3">
+		<label asp-for="Name"></label>
+		<input asp-for="Name" class="form-control"  disabled/>
+		
+	</div>
+	<div class="mb-3">
+		<label asp-for="Address"></label>
+		<input asp-for="Address" class="form-control"  disabled/>
+		
+	</div>
+	<div class="mb-3">
+		<label asp-for="Phone"></label>
+		<input asp-for="Phone" class="form-control" disabled />
+		
+	<div>
+		<button type="submit" class="btn btn-danger">Xoa</button>
+		<a asp-controller="NhanVien" asp-action="Index" class="btn btn-secondary">Quay về</a>
+	</div>
+
+</form>
+
